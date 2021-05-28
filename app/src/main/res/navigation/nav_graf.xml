@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@id/activity2_2fragment">
+
+    <fragment
+        android:id="@+id/activity2_2fragment"
+        android:name="com.ClaVis.clavis.fracments.Activity2_2fragment"
+        android:label="fragment_activity2_2fragment"
+        tools:layout="@layout/fragment_activity2_2fragment" >
+        <action
+            android:id="@+id/action_activity2_2fragment_to_bazizucMenuFragment"
+            app:destination="@id/bazizucMenuFragment" />
+        <action
+            android:id="@+id/action_activity2_2fragment_to_practic_nots_Fragment"
+            app:destination="@id/practic_nots_Fragment" />
+        <action
+            android:id="@+id/action_activity2_2fragment_to_nots_and_tabsFragment"
+            app:destination="@id/nots_and_tabsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bazizucMenuFragment"
+        android:name="com.ClaVis.clavis.fracments.BazizucMenuFragment"
+        android:label="fragment_bazizuc_menu"
+        tools:layout="@layout/fragment_bazizuc_menu" >
+        <action
+            android:id="@+id/action_bazizucMenuFragment_to_promeshtochniiFragment"
+            app:destination="@id/promeshtochniiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nots_and_tabsFragment"
+        android:name="com.ClaVis.clavis.fracments.Nots_and_tabsFragment"
+        android:label="fragment_nots_and_tabs"
+        tools:layout="@layout/fragment_nots_and_tabs" >
+        <action
+            android:id="@+id/action_nots_and_tabsFragment_to_promeshtochniiFragment"
+            app:destination="@id/promeshtochniiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/practic_nots_Fragment"
+        android:name="com.ClaVis.clavis.fracments.Practic_nots_Fragment"
+        android:label="fragment_practic_nots_"
+        tools:layout="@layout/fragment_practic_nots_" >
+        <action
+            android:id="@+id/action_practic_nots_Fragment_to_promeshtochniiFragment"
+            app:destination="@id/promeshtochniiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/info_Fragment"
+        android:name="com.ClaVis.clavis.fracments.Info_Fragment"
+        android:label="fragment_info_"
+        tools:layout="@layout/fragment_info_" />
+    <fragment
+        android:id="@+id/pianoFragment"
+        android:name="com.ClaVis.clavis.fracments.PianoFragment"
+        android:label="fragment_piano"
+        tools:layout="@layout/fragment_piano" />
+    <fragment
+        android:id="@+id/promeshtochniiFragment"
+        android:name="com.ClaVis.clavis.fracments.PromeshtochniiFragment"
+        android:label="PromeshtochniiFragment" >
+        <action
+            android:id="@+id/action_promeshtochniiFragment_to_pianoFragment"
+            app:destination="@id/pianoFragment" />
+        <action
+            android:id="@+id/action_promeshtochniiFragment_to_info_Fragment"
+            app:destination="@id/info_Fragment" />
+    </fragment>
+</navigation>
